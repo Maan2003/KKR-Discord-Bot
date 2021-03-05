@@ -131,9 +131,6 @@ async def profile(ctx):
         member = ctx.message.mentions[0]
         if member == ctx.author:
             pass
-        elif 'mod' not in [name.name for name in ctx.author.roles]:
-            await ctx.send('Lol nice try (You can\'t see other\'s profiles)')
-            return
     except:
         member = ctx.author
     id = str(member)
